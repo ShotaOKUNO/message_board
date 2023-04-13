@@ -13,6 +13,12 @@ import models.Message;
 import utils.DBUtil;
 import javax.servlet.RequestDispatcher;
 
+import java.util.List;
+import javax.persistence.EntityManager;
+import models.Message;
+import utils.DBUtil;
+
+import javax.servlet.RequestDispatcher;
 
 
 @WebServlet("/index")
@@ -37,4 +43,5 @@ public class IndexServlet extends HttpServlet {
         RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/messages/index.jsp");
         rd.forward(request, response);
     }
+
 }
